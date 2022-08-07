@@ -1,0 +1,132 @@
+* { 
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(76, 201, 240);
+}
+
+#output {
+    width: calc(100vw - 20px);
+    min-width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+    font-size: large;
+    border: 10px rgb(58, 12, 163) solid;
+    border-radius: 1vw;
+    height: 10vh;
+    min-height: 10vh;
+    max-height: 10vh;
+}
+
+#messages {
+    height: calc(100vh - 45vw - 10vh - 20px);
+    overflow-y: scroll;
+}
+
+.message {
+    background-color: rgb(247, 37, 133);
+    color: white;
+    font-size: large;
+    padding: .2em;
+    margin: .2em 1em;
+    border-radius: 8px;
+}
+
+.key {
+    background-color: rgb(58, 12, 163);
+    color: white;
+    width: 8vw;
+    height: 8vw;
+    margin: .5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.key:active {
+    background-color: rgb(67, 97, 238);
+}
+
+#keyboard-wrapper {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(184, 184, 255)
+}
+
+#keyboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 5vw;
+    line-height: 8vw;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.alter {
+    width: 14vw;
+}
+
+.option {
+    width: 16vw;
+}
+
+.space {
+    width: 50vw;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .key {
+        width: calc(4vw + 4vh);
+        min-width: 48px;
+        height: calc(2.5vw + 2.5vh);
+        min-height: 48px;
+        margin: calc(.2vw + .2vh);
+        flex-grow: 1;
+        border-radius: calc(.4vw + .4vh);
+    }
+
+    #output {
+        font-size: xx-large;
+    }
+
+    .row {
+        justify-content: space-around;
+    }
+
+    .alter {
+        width: calc(7vw + 7vh);
+    }
+    
+    .option {
+        width: calc(8vw + 8vh);
+    }
+    
+    .space {
+        width: calc(25vw + 25vh);
+    }
+
+    #keyboard {
+        font-size: calc(2vw + 2vh);
+        line-height: calc(2.5vw + 2.5vh);
+    }
+
+    .message {
+        font-size: xx-large;
+    }
+
+    #messages {
+        height: calc(100vh - 10vh - 14.5vh - 14.5vw - 20px);
+    }
+}

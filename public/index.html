@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./keyboard.css">
+    <title>Keyboard</title>
+</head>
+<body>
+    <div id="messages"></div>
+    <div id="keyboard-wrapper">
+        <textarea name="output" id="output"></textarea>
+        <div id="keyboard">
+            <div class="row" id="row-1">
+                <div class="key number" id="1">1</div>
+                <div class="key number" id="2">2</div>
+                <div class="key number" id="3">3</div>
+                <div class="key number" id="4">4</div>
+                <div class="key number" id="5">5</div>
+                <div class="key number" id="6">6</div>
+                <div class="key number" id="7">7</div>
+                <div class="key number" id="8">8</div>
+                <div class="key number" id="9">9</div>
+                <div class="key number" id="0">0</div>
+            </div>
+            <div class="row" id="row-2">
+                <div class="key letter" id="q">Q</div>
+                <div class="key letter" id="w">W</div>
+                <div class="key letter" id="e">E</div>
+                <div class="key letter" id="r">R</div>
+                <div class="key letter" id="t">T</div>
+                <div class="key letter" id="y">Y</div>
+                <div class="key letter" id="u">U</div>
+                <div class="key letter" id="i">I</div>
+                <div class="key letter" id="o">O</div>
+                <div class="key letter" id="p">P</div>
+            </div>
+            <div class="row" id="row-3">
+                <div class="key letter" id="a">A</div>
+                <div class="key letter" id="s">S</div>
+                <div class="key letter" id="d">D</div>
+                <div class="key letter" id="f">F</div>
+                <div class="key letter" id="g">G</div>
+                <div class="key letter" id="h">H</div>
+                <div class="key letter" id="j">J</div>
+                <div class="key letter" id="k">K</div>
+                <div class="key letter" id="l">L</div>
+            </div>
+            <div class="row" id="row-4">
+                <div class="key alter" id="shift">Shift</div>
+                <div class="key letter" id="z">Z</div>
+                <div class="key letter" id="x">X</div>
+                <div class="key letter" id="c">C</div>
+                <div class="key letter" id="v">V</div>
+                <div class="key letter" id="b">B</div>
+                <div class="key letter" id="n">N</div>
+                <div class="key letter" id="m">M</div>
+                <div class="key alter" id="back">Back</div>
+            </div>
+            <div class="row hidden" id="row-5">
+                <div class="key other" id="plus">+</div>
+                <div class="key other" id="divide">/</div>
+                <div class="key other" id="equal">=</div>
+                <div class="key other" id="underscore">_</div>
+                <div class="key other" id="less"><</div>
+                <div class="key other" id="greater">></div>
+                <div class="key other" id="bracket-left">[</div>
+                <div class="key other" id="bracket-right">]</div>
+                <div class="key other" id="curly-left">{</div>
+                <div class="key other" id="curly-right">}</div>
+            </div>
+            <div class="row hidden" id="row-6">
+                <div class="key other" id="e-mark">!</div>
+                <div class="key other" id="at-sign">@</div>
+                <div class="key other" id="hash">#</div>
+                <div class="key other" id="dollar">$</div>
+                <div class="key other" id="percent">%</div>
+                <div class="key other" id="carat">^</div>
+                <div class="key other" id="and">&</div>
+                <div class="key other" id="q-mark">?</div>
+                <div class="key other" id="astrick">*</div>
+            </div>
+            <div class="row hidden" id="row-7">
+                <div class="key other" id="p-left">(</div>
+                <div class="key other" id="p-right">)</div>
+                <div class="key other" id="minus">-</div>
+                <div class="key other" id="single-q">'</div>
+                <div class="key other" id="double-q">"</div>
+                <div class="key other" id="colon">:</div>
+                <div class="key other" id="semi-colon">;</div>
+                <div class="key other" id="back-tick">`</div>
+                <div class="key option" id="back-2">Back</div>
+            </div>
+            <div class="row" id="row-8">
+                <div class="key option" id="option-1">!#1</div>
+                <div class="key other punct" id="comma">,</div>
+                <div class="key other space" id="space">Space Bar</div>
+                <div class="key other punct" id="period">.</div>
+                <div class="key option" id="enter">Send</div>
+            </div>
+        </div>
+    </div>
+    <script src="./keyboard.js"></script>
+</body>
+</html>
